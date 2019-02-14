@@ -1,0 +1,21 @@
+@mixin smoothfont {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+}
+
+
+html {
+  @include smoothfont;
+  font-family: 'Poppins';
+}
+
+
+h1 {
+  font-family: 'Poppins';
+  font-size: calc(6vw + .5vh + .5vmin)!important;
+  line-height: 1.32;
+  letter-spacing: -.03em;
+  font-weight: 500;
+}

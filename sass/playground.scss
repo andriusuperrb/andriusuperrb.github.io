@@ -1,0 +1,130 @@
+header,
+main {
+  img {
+    max-width: 1440px;
+    margin: 0px auto;
+    display: block;
+  }
+}
+
+/*  Parallax scrolling text in the Header */
+.overlay {
+  background-image: linear-gradient(
+    -180deg,
+    rgba(35, 35, 35, 0) 0%,
+    #1b1b1d 82%
+  );
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+.container {
+  overflow: hidden;
+  width: 100vw;
+  transform: rotate(-10deg);
+  position: absolute;
+  opacity: 0.6;
+  margin-top: -360px;
+}
+.scrolling-text {
+  font-size: calc(9vw + 0.5vh + 0.5vmin) !important;
+  font-family: "YoungSerif";
+  font-weight: 500;
+  white-space: nowrap;
+}
+.st-1,
+.st-3 {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+/*  Projects  */
+
+.video {
+  margin-top: 65vh;
+  position: relative;
+  display: block;
+  z-index: 22;
+  opacity: 0;
+  transform: translateY(200px);
+}
+video {
+  width: 100%;
+}
+.project.video {
+  margin-bottom: -150px;
+}
+
+.project {
+  z-index: 3;
+  position: relative;
+  img {
+    width: 100%;
+    display: block;
+    position: relative;
+  }
+  &__description {
+    font-family: Graphik;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 31px;
+    margin-top: 1em;
+    display: block;
+    position: relative;
+    strong {
+      color: #ffffff;
+      font-weight: 500;
+      display: block;
+      position: relative;
+    }
+    span {
+      color: #807d7d;
+      display: block;
+      position: relative;
+    }
+  }
+}
+
+.face1 {
+  width: 130px;
+  left: 55%;
+  position: absolute;
+}
+.face2 {
+  width: 120px;
+  left: 25%;
+  position: absolute;
+}
+.logo3d {
+  margin-top: -70vh;
+  position: relative;
+  z-index: 5;
+}
+.more {
+  margin-top: -50vh;
+}
+
+/*  Text Scroll in background  */
+.text-scroll,
+.text-scroll2 {
+  font-size: calc(10vw + 0.5vh + 0.5vmin) !important;
+  font-family: "YoungSerif";
+  font-weight: 500;
+  white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: absolute;
+  margin-top: 150vh;
+  top: 0;
+  display: block;
+  opacity: 0.5;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.text-scroll2 {
+  font-size: calc(8vw + 0.5vh + 0.5vmin) !important;
+  margin-top: 280vh;
+  left: -60%;
+}
