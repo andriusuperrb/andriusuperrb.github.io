@@ -52,19 +52,17 @@ var textScene3 = new ScrollMagic.Scene({
     TweenMax.to($textRegular2, 3, { x: -e.progress * 250, ease: Expo.easeOut });
   });
 
-/* $('html').on('wheel', function(e) {
+$("html").on("wheel", function(e) {
   scrollP = window.scrollY;
 
   if (scrollP > oldScrollP) {
     // going down
-    console.log('going down');
+    console.log("going down");
     //TweenMax.to($text, 2, {x: '-100%'});
-
-  } else if (scrollP < oldScrollP){
+  } else if (scrollP < oldScrollP) {
     // going up
-    console.log('going up');
-
+    console.log("going up");
   }
 
   oldScrollP = scrollP;
-}); */
+});

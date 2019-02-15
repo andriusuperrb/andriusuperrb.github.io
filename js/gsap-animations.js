@@ -8,26 +8,26 @@ TweenMax.to(".video", 3, {
   ease: "BiA"
 });
 
-// 1. project title transition animation
-var transitionIn = TweenMax.staggerFrom(
-  ".transitionIn",
-  2,
-  {
-    y: "20",
-    opacity: "0",
-    delaY: 0.1,
-    ease: "BiA"
-  },
-  0.2
-);
-// 1. project title transition scene
-var scene = new ScrollMagic.Scene({
-  triggerElement: ".transitionIn",
-  triggerHook: "onEnter",
-  offset: 20
-})
-  .setTween(transitionIn)
-  .addTo(controller);
+// // 1. project title transition animation
+// var transitionIn = TweenMax.staggerFrom(
+//   ".transitionIn",
+//   2,
+//   {
+//     y: "20",
+//     opacity: "0",
+//     delaY: 0.1,
+//     ease: "BiA"
+//   },
+//   0.2
+// );
+// // 1. project title transition scene
+// var scene = new ScrollMagic.Scene({
+//   triggerElement: ".transitionIn",
+//   triggerHook: "onEnter",
+//   offset: 20
+// })
+//   .setTween(transitionIn)
+//   .addTo(controller);
 
 // // build scene
 // var scene2 = new ScrollMagic.Scene({
@@ -42,3 +42,21 @@ var scene = new ScrollMagic.Scene({
 //     force3D: true
 //   })
 //   .addTo(controller);
+
+$(".transitionIn").each(function() {
+  var transitionIn = this;
+
+  var tweenIn = new TimelineMax().from(transitionIn, 3, {
+    y: "30",
+    opacity: "0",
+    delaY: 0.5,
+    ease: "BiA"
+  });
+
+  var scene = new ScrollMagic.Scene({
+    triggerElement: transitionIn,
+    offset: -$(window).height() * 0.25
+  })
+    .setTween(tweenIn)
+    .addTo(controller);
+});
