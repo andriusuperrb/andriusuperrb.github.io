@@ -207,57 +207,6 @@
 		"oAP": "/build/js",
 		"oF": 0
 		},
-	"/parallax-sliding-text/css/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/parallax-sliding-text/css/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/parallax-sliding-text/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/parallax-sliding-text/index.html",
-		"oF": 0
-		},
-	"/parallax-sliding-text/js/index.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/parallax-sliding-text/js/index-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/parallax-sliding-text/js/smoothscroll.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/parallax-sliding-text/js/smoothscroll-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/parallax-sliding-text/license.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/parallax-sliding-text/license.txt",
-		"oF": 0
-		},
-	"/parallax-sliding-text/README.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/parallax-sliding-text/README.txt",
-		"oF": 0
-		},
 	"/sass/2. base/_defaults.scss": {
 		"aP": 0,
 		"bl": 0,

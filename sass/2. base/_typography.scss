@@ -1,21 +1,43 @@
+@font-face {
+  font-display: swap;
+  font-family: "Young Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn.superrb.com/frontend/fonts/YoungSerif-Regular.woff2)
+      format("woff2"),
+    url(https://cdn.superrb.com/frontend/fonts/YoungSerif-Regular.woff)
+      format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://cdn.superrb.com/frontend/fonts/Graphik-Regular-Web.woff2)
+      format("woff2"),
+    url(https://cdn.superrb.com/frontend/fonts/Graphik-Regular-Web.woff)
+      format("woff");
+}
+
 @mixin smoothfont {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-tap-highlight-color: transparent;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
-
 
 html {
   @include smoothfont;
-  font-family: 'Poppins';
 }
 
-
 h1 {
-  font-family: 'Poppins';
-  font-size: calc(6vw + .5vh + .5vmin)!important;
+  font-size: calc(6vw + 0.5vh + 0.5vmin) !important;
   line-height: 1.32;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
   font-weight: 500;
+}
+
+p {
+  font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif;
 }
