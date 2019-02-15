@@ -25,11 +25,12 @@ main {
 }
 .container {
   overflow: hidden;
-  width: 100vw;
+  width: 120vw;
   transform: rotate(-10deg);
   position: absolute;
   opacity: 0.6;
-  margin-top: -360px;
+  margin-top: -300px;
+  margin-left: -10vw;
 }
 .scrolling-text {
   font-size: calc(9vw + 0.5vh + 0.5vmin) !important;
