@@ -1,3 +1,4 @@
+/*  Logo & Header styling */
 header,
 main {
   img {
@@ -29,7 +30,7 @@ main {
   transform: rotate(-10deg);
   position: absolute;
   opacity: 0.6;
-  margin-top: -300px;
+  margin-top: -360px;
   margin-left: -10vw;
 }
 .scrolling-text {
@@ -44,7 +45,7 @@ main {
   -webkit-text-stroke: 1px white;
 }
 
-/*  Projects  */
+/*  Project thumbnails + description  */
 
 .video {
   margin-top: 65vh;
@@ -92,27 +93,8 @@ video {
   }
 }
 
-.face1 {
-  width: 130px;
-  left: 55%;
-  position: absolute;
-}
-.face2 {
-  width: 120px;
-  left: 25%;
-  position: absolute;
-}
-.logo3d {
-  margin-top: -70vh;
-  position: relative;
-  z-index: 5;
-  width: 100%;
-}
-.more {
-  margin-top: -50vh;
-}
+/*  Long Text Scroll in background  */
 
-/*  Text Scroll in background  */
 .text-scroll,
 .text-scroll2 {
   font-size: calc(10vw + 0.5vh + 0.5vmin) !important;
@@ -133,4 +115,26 @@ video {
   font-size: calc(8vw + 0.5vh + 0.5vmin) !important;
   top: 33%;
   left: -60%;
+}
+
+/*  Other Page elements  */
+
+.face1 {
+  width: 130px;
+  left: 55%;
+  position: absolute;
+}
+.face2 {
+  width: 120px;
+  left: 25%;
+  position: absolute;
+}
+.logo3d {
+  margin-top: -70vh;
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+.more {
+  margin-top: -50vh;
 }

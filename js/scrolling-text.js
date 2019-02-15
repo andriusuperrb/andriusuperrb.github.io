@@ -1,3 +1,4 @@
+// Code source: https://codepen.io/drewhaas/pen/vaEpvy
 // TODO: make this more dynamic
 var $textRegular1 = $(".st-1");
 var $textInverse = $(".st-2");
