@@ -70,6 +70,21 @@ video {
     display: block;
     position: relative;
   }
+  &__img-box {
+    overflow: hidden;
+    transition: transform 1.33s cubic-bezier(0.165, 0.84, 0.44, 1);
+    img,
+    video {
+      transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    &:hover {
+      transform: scale(0.98);
+    }
+    &:hover img,
+    &:hover video {
+      transform: scale(1.05);
+    }
+  }
   &__description {
     font-family: Graphik;
     font-size: 18px;
